@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Grass Livelihood Foundation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+       <!-- Navbar Component -->
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo / Site Name -->
+          <a href="#" class="text-xl font-bold text-green-600">Grass Livelihood Foundation</a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="../Static/index.html" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="../Static/AboutUs.html" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Projects</a>
+          <a href="../Static/Donation.html" class="text-gray-700 hover:text-green-600">Donate</a>
+          <a href="../Static/contactUs.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-green-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Projects</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Donate</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  
+    <script>
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+  
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+    <section class="bg-white py-16 px-6">
+        <div class="max-w-5xl mx-auto">
+          <!-- Heading -->
+          <h1 class="text-4xl font-bold text-green-700 mb-6 text-center">About GRASS Livelihood Foundation</h1>
+      
+          <!-- Intro Paragraph -->
+          <p class="text-lg text-gray-700 leading-relaxed mb-8">
+            <strong>GRASS Livelihood Foundation</strong>, established on <strong>1st July 2024</strong> as a non-profit Section 8 company under the Companies Act, 2013, is a transformative organization dedicated to uplifting rural communities in <strong>Uttarakhand</strong>, particularly in the <strong>Rudraprayag district</strong>. 
+            <br><br>
+            The foundation is committed to creating a sustainable and inclusive development model that respects and integrates the rich cultural heritage of the region with modern practices. 
+            Recognizing the value of traditional knowledge, GRASS Livelihood Foundation endeavors to preserve and propagate the wisdom and practices passed down through generations, ensuring their relevance in contemporary society.
+          </p>
+      
+          <!-- Mission & Vision -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-green-50 p-6 rounded-xl shadow">
+              <h2 class="text-2xl font-semibold text-green-700 mb-3">🌱 Mission</h2>
+              <p class="text-gray-700">
+                To protect, preserve, and propagate traditional practices and knowledge systems by working alongside local communities, empowering them through livelihood programs, education, and skill development.
+              </p>
+            </div>
+      
+            <div class="bg-green-50 p-6 rounded-xl shadow">
+              <h2 class="text-2xl font-semibold text-green-700 mb-3">🌍 Vision</h2>
+              <p class="text-gray-700">
+                To innovate and conserve traditional wisdom while promoting its sustainable utilization for the holistic development of society.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Organization Info -->
+          <div class="bg-gray-50 p-6 rounded-xl shadow mb-12">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">📋 Organization Details</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li><strong>📛 Name:</strong> GRASS Livelihood Foundation</li>
+              <li><strong>🏠 Address:</strong> Kalikhand, Post Budna, District Rudraprayag 246475, Uttarakhand</li>
+              <li><strong>🌐 Email:</strong> <a href="mailto:grass_rudraprayag@yahoo.co.in" class="text-green-600 hover:underline">grass_rudraprayag@yahoo.co.in</a></li>
+              <li><strong>👥 Chief Functionaries:</strong>
+                <ul class="ml-6 list-disc">
+                  <li>Raghubir Singh Kandwal</li>
+                  <li>Ashutosh Kandwal</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Optional CTA or Quote -->
+          <div class="text-center mt-10">
+            <blockquote class="text-xl italic text-gray-600">
+              “Empowering communities by blending tradition with transformation.”
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Logo and About -->
+            <div>
+                <h2 class="text-2xl font-bold text-green-500 mb-4">GRASS Livelihood</h2>
+                <p class="text-gray-300 text-sm">
+                    A non-profit working to uplift rural Uttarakhand through sustainable and inclusive development while
+                    preserving traditional knowledge.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">About Us</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Projects</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Donate</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Contact</h3>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>📍 Rudraprayag, Uttarakhand</li>
+                    <li>📞 +91-123-456-7890</li>
+                    <li>📧 info@grassfoundation.org</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-green-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-800 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+            © 2024 GRASS Livelihood Foundation. All rights reserved.
+        </div>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </footer>
+
+</body>
+</html>

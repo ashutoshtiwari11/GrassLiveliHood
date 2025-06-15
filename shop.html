@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <title>Grass Livelihood Foundation</title>
+</head>
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo / Site Name -->
+          <a href="#" class="text-xl font-bold text-green-600">Grass Livelihood Foundation</a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="../Static/index.html" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="../Static/AboutUs.html" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Projects</a>
+          <a href="../Static/Donation.html" class="text-gray-700 hover:text-green-600">Donate</a>
+          <a href="../Static/contactUs.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-green-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Projects</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Donate</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  
+    <script>
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+  
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+<section class="bg-gray-50 py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-green-700 mb-12">🧺 Our Handmade Products</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product Card -->
+      <div class="bg-white shadow rounded-2xl overflow-hidden">
+        <img src="images/ringal.webp" alt="Ringaal Basket" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800">Ringaal Basket</h3>
+          <p class="text-green-600 font-medium mt-1">₹350</p>
+          <p class="text-sm text-gray-600 mt-2">Handwoven from local bamboo (Ringaal) by trained youth.</p>
+
+          <a 
+            href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20buying%20a%20Ringaal%20Basket%20from%20GRASS%20Livelihood%20Foundation."
+            target="_blank"
+            class="inline-block mt-4 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-700"
+          >
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white shadow rounded-2xl overflow-hidden">
+        <img src="images/dona.webp" alt="Dona Pattal Set" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800">Dona Pattal Set</h3>
+          <p class="text-green-600 font-medium mt-1">₹120 for 25 pcs</p>
+          <p class="text-sm text-gray-600 mt-2">Eco-friendly biodegradable leaf plates made by local women.</p>
+
+          <a 
+            href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20a%20Dona%20Pattal%20Set%20from%20GRASS%20Livelihood%20Foundation."
+            target="_blank"
+            class="inline-block mt-4 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-700"
+          >
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white shadow rounded-2xl overflow-hidden">
+        <img src="images/shuppa.webp" alt="Ringaal Shuppa" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800">Ringaal Shuppa (Tray)</h3>
+          <p class="text-green-600 font-medium mt-1">₹280</p>
+          <p class="text-sm text-gray-600 mt-2">Traditional winnowing basket crafted from Ringaal bamboo.</p>
+
+          <a 
+            href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20purchasing%20a%20Ringaal%20Shuppa%20(Tray)%20from%20your%20collection."
+            target="_blank"
+            class="inline-block mt-4 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-700"
+          >
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Add more products as needed -->
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-gray-600">Your support preserves tradition and empowers our rural artisans. 💚</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+    
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+  
+      <!-- Logo and About -->
+      <div>
+        <h2 class="text-2xl font-bold text-green-500 mb-4">GRASS Livelihood</h2>
+        <p class="text-gray-300 text-sm">
+          A non-profit working to uplift rural Uttarakhand through sustainable and inclusive development while preserving traditional knowledge.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">About Us</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Projects</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Donate</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Contact</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>📍 Rudraprayag, Uttarakhand</li>
+          <li>📞 +91-123-456-7890</li>
+          <li>📧 info@grassfoundation.org</li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-green-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Bottom Bar -->
+    <div class="bg-gray-800 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+      © 2024 GRASS Livelihood Foundation. All rights reserved.
+    </div>
+  
+    <script>
+      lucide.createIcons();
+    </script>
+  </footer>
+
+    
+</body>
+</html>

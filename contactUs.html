@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <title>Grass Livelihood Foundation</title>
+</head>
+
+<body>
+        <!-- Navbar Component -->
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo / Site Name -->
+          <a href="#" class="text-xl font-bold text-green-600">Grass Livelihood Foundation</a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="../Static/index.html" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="../Static/AboutUs.html" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Projects</a>
+          <a href="../Static/Donation.html" class="text-gray-700 hover:text-green-600">Donate</a>
+          <a href="../Static/contactUs.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-green-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Projects</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Donate</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  
+    <script>
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+  
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-4xl font-bold text-green-600 mb-6">Contact Us</h2>
+                <p class="text-gray-600 mb-6">
+                    We'd love to hear from you. Whether it's a question, suggestion, or you're interested in joining or
+                    supporting our mission, feel free to reach out.
+                </p>
+
+                <div class="space-y-4 text-gray-700 text-base">
+                    <p>📍 <strong>Address:</strong> Rudraprayag, Uttarakhand, India</p>
+                    <p>📞 <strong>Phone:</strong> +91-123-456-7890</p>
+                    <p>📧 <strong>Email:</strong> info@grassfoundation.org</p>
+                </div>
+
+                <!-- Optional: Social Media -->
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-green-500"><i data-lucide="facebook"
+                            class="w-6 h-6"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-green-500"><i data-lucide="twitter"
+                            class="w-6 h-6"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-green-500"><i data-lucide="instagram"
+                            class="w-6 h-6"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-gray-50 p-8 rounded-2xl shadow">
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="name" required
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="email" required
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Subject</label>
+                        <input type="text" name="subject" required
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" rows="4" required
+                            class="w-full p-3 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-green-600 text-white font-semibold py-3 rounded-md hover:bg-green-700">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Optional: Google Maps -->
+        <div class="mt-16 max-w-7xl mx-auto">
+            <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                <div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=rudraprayag&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="my-codefor-googlemap" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+                    id="enable-map-data">premium bootstrap themes</a>
+                <style>
+                    #my-map-display .text-marker {}
+
+                    .map-generator {
+                        max-width: 100%;
+                        max-height: 100%;
+                        background: none;}
+                </style>
+            </div>
+        </div>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </section>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Logo and About -->
+            <div>
+                <h2 class="text-2xl font-bold text-green-500 mb-4">GRASS Livelihood</h2>
+                <p class="text-gray-300 text-sm">
+                    A non-profit working to uplift rural Uttarakhand through sustainable and inclusive development while
+                    preserving traditional knowledge.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">About Us</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Projects</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Donate</a></li>
+                    <li><a href="#" class="hover:underline text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Contact</h3>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>📍 Rudraprayag, Uttarakhand</li>
+                    <li>📞 +91-123-456-7890</li>
+                    <li>📧 info@grassfoundation.org</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-green-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-800 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+            © 2024 GRASS Livelihood Foundation. All rights reserved.
+        </div>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </footer>
+
+</body>
+
+</html>

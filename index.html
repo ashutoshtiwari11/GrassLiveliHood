@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Grass Livelihood Foundation</title>
+</head>
+<body>
+    <!-- Navbar Component -->
+<nav class="bg-white shadow-md ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo / Site Name -->
+          <a href="#" class="text-xl font-bold text-green-600">Grass Livelihood Foundation</a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="#" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="../Static/AboutUs.html" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Projects</a>
+          <a href="../Static/Donation.html" class="text-gray-700 hover:text-green-600">Donate</a>
+          <a href="../Static/contactUs.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-green-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Projects</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Donate</a>
+      <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  
+    <script>
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+  
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+  <!-- Alpine.js for interactivity -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <!-- CEO Message -->
+
+    
+
+
+
+
+
+<!-- Carousel -->
+<!-- <div x-data="{ activeSlide: 0, slides: ['../Static/images/img1.jpg', '../Static/images/img2.jpg', '../Static/images/img3.jpg'] }" class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-xl shadow-md">
+  
+  <div class="flex transition-transform duration-500" 
+       :style="`transform: translateX(-${activeSlide * 100}%); width: ${slides.length * 100}%`">
+    <template x-for="(slide, index) in slides" :key="index">
+      <div class="w-full flex-shrink-0">
+        <img :src="slide" class="w-full h-72 object-cover" alt="Slide Image">
+      </div>
+    </template>
+  </div>
+
+  <button @click="activeSlide = (activeSlide === 0) ? slides.length - 1 : activeSlide - 1"
+          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full shadow hover:bg-opacity-100">
+    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+  <button @click="activeSlide = (activeSlide + 1) % slides.length"
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full shadow hover:bg-opacity-100">
+    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    <template x-for="(slide, index) in slides" :key="index">
+      <div @click="activeSlide = index"
+           :class="activeSlide === index ? 'bg-green-600' : 'bg-gray-300'"
+           class="w-3 h-3 rounded-full cursor-pointer transition-all"></div>
+    </template>
+  </div>
+</div> -->
+
+
+<!-- Lucide Icons CDN -->
+<!-- <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script> -->
+
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-[90vh] text-white overflow-hidden" style="background-image: url('../Static/images/rudraprayag1.jpeg');">
+  <!-- Overlay for better text contrast -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+
+  <!-- Animated background effect -->
+  <div class="absolute inset-0 bg-cover bg-center scale-100 animate-zoom-slow z-0" style="background-image: url('../Static/images/rudraprayag1.jpeg');"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4 leading-tight">GRASS Livelihood Foundation</h1>
+    <p class="text-lg sm:text-xl mb-8 max-w-3xl">Empowering rural Uttarakhand through sustainable development, traditional knowledge, and community resilience.</p>
+
+    <a href="#programs" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition">
+      Explore Our Work
+    </a>
+  </div>
+</section>
+
+
+<!-- Program Focus Area Section -->
+<section id="programs" class="bg-white py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Focus Areas</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+      
+      <!-- Livelihood -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="handshake" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Livelihood</h3>
+        <p class="text-gray-600">Creating income opportunities for rural communities through local enterprises.</p>
+      </div>
+
+      <!-- Rural Development -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="home" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Rural Development</h3>
+        <p class="text-gray-600">Infrastructure, education, and resources to empower villages sustainably.</p>
+      </div>
+
+      <!-- Agriculture -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="leaf" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Agriculture</h3>
+        <p class="text-gray-600">Reviving traditional farming and introducing climate-smart practices.</p>
+      </div>
+
+      <!-- Women Employment -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="user-check" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Women Employment</h3>
+        <p class="text-gray-600">Empowering women through training, jobs, and financial literacy.</p>
+      </div>
+
+      <!-- Skill Development -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="tool" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Skill Development</h3>
+        <p class="text-gray-600">Training youth in trades, technology, and sustainable crafts.</p>
+      </div>
+
+      <!-- Disaster Management -->
+      <div class="p-6 rounded-xl shadow hover:shadow-lg border">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="alert-triangle" class="w-10 h-10 text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Disaster Management</h3>
+        <p class="text-gray-600">Preparing communities for natural calamities with education and support.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+<section class="bg-white py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <h2 class="text-4xl font-bold text-center text-green-700 mb-4">Preserving Culture, Empowering Lives</h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      Our mission includes reviving traditional crafts and music of Uttarakhand — offering training, employment, and dignity to our youth.
+    </p>
+
+    <!-- Grid of Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="./images/dhol_damau.webp" alt="Dholl Damau" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Dholl-Damau</h3>
+          <p class="text-gray-700 text-sm">Traditional musical instruments used in folk celebrations. We support artists and preserve this cultural sound.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <!-- <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="images/mushak_been.jpg" alt="Mushak Been" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Mushak Been</h3>
+          <p class="text-gray-700 text-sm">A wind instrument once used in rituals and village traditions. We teach youth to restore and play it.</p>
+        </div>
+      </div> -->
+
+      <!-- Card 3 -->
+      <!-- <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="images/dona_pattal.jpg" alt="Dona Pattal" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Dona-Pattal</h3>
+          <p class="text-gray-700 text-sm">Eco-friendly plates & bowls made from leaves. Training provided to make and sell these sustainable products.</p>
+        </div>
+      </div> -->
+
+      <!-- Card 4 -->
+      <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="./images/maangal_geet.webp" alt="Maangal Geet" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Maangal Geet</h3>
+          <p class="text-gray-700 text-sm">Traditional wedding and festive songs. We document, record, and teach to preserve these oral legacies.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="./images/ringaal.webp" alt="Ringaal Craft" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Ringaal Craft</h3>
+          <p class="text-gray-700 text-sm">Bamboo crafts like supaa, tokari, kenii, patha, and khamilya. We train youth and help market their products.</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <!-- <div class="bg-green-50 rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+        <img src="images/shop_support.jpg" alt="Buy to Support" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-green-800 mb-2">Buy to Support</h3>
+          <p class="text-gray-700 text-sm">Support these artists by buying handmade cultural items. Your support provides livelihood and dignity.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Call to Action -->
+   
+
+  </div>
+   <div class="flex justify-center mt-14">
+  <a href="../Static/shop.html" class="inline-block bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow hover:bg-green-800 transition">
+    🌿 Explore Crafts & Support
+  </a>
+</div>
+</section>
+
+<section id="ceo" class=" mx-5 px-10 bg-gradient-to-r from-blue-500 to-green-500 p-8 rounded-lg shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- CEO Image -->
+            <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+                <img src="ceo.jpeg" class="rounded-full w-48 h-48 border-4 border-white" alt="CEO">
+            </div>
+            <!-- CEO Message -->
+            <div class="text-white flex-1">
+                <h3 class="text-3xl font-bold mb-4">🌿 Message from the Founder</h3>
+                <p class="text-lg mb-4">“At GRASS Livelihood Foundation, our mission is rooted in respect — for our culture, our people, and our land. We believe that the wisdom of our ancestors is not just history, but a guide to a more sustainable and inclusive future. Together with our community, we are building a future where tradition and progress walk hand in hand.”
+.</p>
+                <footer class="text-right text-sm italic">— Raghubir Singh Kandwal <br><span class="not-italic font-bold">Founder, GRASS Livelihood Foundation</span></footer>
+            </div>
+        </div>
+    </section>
+<section class="bg-white py-20 px-4">
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- Header -->
+    <h2 class="text-4xl font-bold text-center text-green-700 mb-4">📚 Education & Community Engagement</h2>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      Blending traditional wisdom with modern awareness to build a stronger, cleaner, and united society.
+    </p>
+
+    <!-- Media Content -->
+    <div class="flex flex-col lg:flex-row gap-10 items-center justify-between">
+      
+      <!-- Video -->
+      <div class="w-full lg:w-1/2">
+        <div class="w-full aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
+          <iframe 
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+            title="Community Education Program" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="mt-4 text-sm text-gray-500">A glimpse of our dialogues and community awareness drive.</p>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+        <img src="images/workshops.png" alt="Workshop" class="rounded-lg shadow-lg object-cover h-48 w-full">
+        <img src="images/clean.jpeg" alt="Cleanliness Drive" class="rounded-lg shadow-lg object-cover h-48 w-full">
+        <img src="images/elderly.jpeg" alt="Elder sharing wisdom" class="rounded-lg shadow-lg object-cover h-48 w-full">
+        <img src="images/youth.jpeg" alt="Youth Awareness" class="rounded-lg shadow-lg object-cover h-48 w-full">
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-20">
+      <h3 class="text-3xl font-bold text-center text-green-800 mb-10">💬 What Our Community Says</h3>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-green-50 p-6 rounded-xl shadow-md flex items-start gap-4">
+          <img src="https://i.pravatar.cc/60?img=32" alt="Pooja Devi" class="rounded-full w-14 h-14 object-cover border-2 border-green-300">
+          <div>
+            <p class="text-gray-800 italic">"Through these workshops, I understood the importance of our family traditions. I'm now helping my grandmother document local recipes and rituals!"</p>
+            <p class="mt-3 text-sm text-green-700 font-semibold">— Pooja Devi, Youth Participant</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-green-50 p-6 rounded-xl shadow-md flex items-start gap-4">
+          <img src="https://i.pravatar.cc/60?img=56" alt="Dinesh Negi" class="rounded-full w-14 h-14 object-cover border-2 border-green-300">
+          <div>
+            <p class="text-gray-800 italic">"I thought no one cared about our old ways. But now, seeing the youth involved fills me with hope and pride."</p>
+            <p class="mt-3 text-sm text-green-700 font-semibold">— Dinesh Negi, Village Elder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a href="../Static/contactUs.html" class="inline-block bg-green-700 text-white text-sm font-semibold px-8 py-3 rounded-full hover:bg-green-800 transition">
+        📩 Get Involved with Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+    
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+  
+      <!-- Logo and About -->
+      <div>
+        <h2 class="text-2xl font-bold text-green-500 mb-4">GRASS Livelihood</h2>
+        <p class="text-gray-300 text-sm">
+          A non-profit working to uplift rural Uttarakhand through sustainable and inclusive development while preserving traditional knowledge.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">About Us</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Projects</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Donate</a></li>
+          <li><a href="#" class="hover:underline text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Contact</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>📍 Rudraprayag, Uttarakhand</li>
+          <li>📞 +91-123-456-7890</li>
+          <li>📧 info@grassfoundation.org</li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-green-400">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-green-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+          <a href="#" class="hover:text-green-500"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Bottom Bar -->
+    <div class="bg-gray-800 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+      © 2024 GRASS Livelihood Foundation. All rights reserved.
+    </div>
+  
+    <script>
+      lucide.createIcons();
+    </script>
+  </footer>
+</body>
+</html>
