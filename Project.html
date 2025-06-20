@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Grass Livelihood Foundation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+       <!-- Navbar Component -->
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <!-- Logo / Site Name -->
+          <a href="#" class="text-xl font-bold text-green-600">Grass Livelihood Foundation</a>
+        </div>
+  
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="AboutUs.html" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Projects</a>
+          <a href="Donation.html" class="text-gray-700 hover:text-green-600">Donate</a>
+          <a href="contactUs.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+   <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow">
+      <a href="index.html" class="block text-gray-700 hover:text-green-600">Home</a>
+      <a href="AboutUs.html" class="block text-gray-700 hover:text-green-600">About</a>
+      <a href="Project.html" class="block text-gray-700 hover:text-green-600">Projects</a>
+      <a href="Donation.html" class="block text-gray-700 hover:text-green-600">Donate</a>
+      <a href="contactUs.html" class="block text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  
+    <script>
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+  
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>
+
+  
+  <section class="relative bg-green-50 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-green-700 mb-4">🌱 Our Projects</h2>
+    <p class="text-gray-700 mb-12 max-w-3xl mx-auto">
+      We are laying the foundation for impactful projects in Uttarakhand. From sustainable agriculture to women empowerment — exciting initiatives are on the way!
+    </p>
+
+    <!-- Coming Soon Visual -->
+    <div class="mb-16">
+      <img src="./images/comming-soon.webp" alt="Coming Soon" class="mx-auto w-64">
+      <p class="mt-4 text-gray-500 italic">Projects launching soon. Stay connected!</p>
+    </div>
+
+    <!-- Vision Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <img src="./images/womenEmpowerment.webp" class="h-24 mx-auto mb-4" alt="Women Empowerment">
+        <h3 class="text-xl font-semibold text-green-800">Women Empowerment</h3>
+        <p class="text-gray-600 mt-2 text-sm">We aim to create self-help groups and skill training centers for rural women.</p>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <img src="./images/sustainable-Agriculture.webp" class="h-24 mx-auto mb-4" alt="Sustainable Farming">
+        <h3 class="text-xl font-semibold text-green-800">Sustainable Agriculture</h3>
+        <p class="text-gray-600 mt-2 text-sm">Plans include introducing organic methods and traditional seed banks.</p>
+      </div>
+
+      <div class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
+        <img src="./images/eco-House.webp" class="h-24 mx-auto mb-4" alt="Eco Housing">
+        <h3 class="text-xl font-semibold text-green-800">Eco-friendly Housing</h3>
+        <p class="text-gray-600 mt-2 text-sm">Reviving traditional mud and stone homes for safety, culture, and sustainability.</p>
+      </div>
+    </div>
+
+    <!-- Roadmap / Timeline -->
+    <div class="mt-20 text-left">
+      <h3 class="text-2xl font-bold text-green-700 text-center mb-6">🔭 Our Upcoming Timeline</h3>
+      <ul class="border-l-4 border-green-600 pl-6 space-y-6 max-w-3xl mx-auto">
+        <li>
+          <span class="text-green-600 font-semibold">July 2025</span> – Foundation Registered & Awareness Programs Begun
+        </li>
+        <li>
+          <span class="text-green-600 font-semibold">Aug–Sept 2025</span> – Community Meetings & Needs Assessment
+        </li>
+        <li>
+          <span class="text-green-600 font-semibold">Oct 2025 onwards</span> – Pilot Projects in Ringaal Craft and Women Training
+        </li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-14">
+      <a href="contactUs.html" class="inline-block bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow hover:bg-green-800 transition">
+        🤝 Partner With Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+      <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Logo and About -->
+            <div>
+                <h2 class="text-2xl font-bold text-green-500 mb-4">GRASS Livelihood</h2>
+                <p class="text-gray-300 text-sm">
+                    A non-profit working to uplift rural Uttarakhand through sustainable and inclusive development while
+                    preserving traditional knowledge.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="" class="hover:underline text-gray-300">Home</a></li>
+                    <li><a href="AboutUs.html" class="hover:underline text-gray-300">About Us</a></li>
+                    <li><a href="Project.html" class="hover:underline text-gray-300">Projects</a></li>
+                    <li><a href="Donation.html" class="hover:underline text-gray-300">Donate</a></li>
+                    <li><a href="contactUs.html" class="hover:underline text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Contact</h3>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>📍 Rudraprayag, Uttarakhand</li>
+                    <li>📞 +91-123-456-7890</li>
+                    <li>📧 info@grassfoundation.org</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3 text-green-400">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-green-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-green-500"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-800 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+            © 2024 GRASS Livelihood Foundation. All rights reserved.
+        </div>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </footer>
+
+</body>
+</html>
